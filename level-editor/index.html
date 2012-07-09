@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gus Level Editor</title>
+	<style type="text/css">
+		html,body {
+			background-image:url('../bg.png');
+			background-repeat:repeat;
+			color: #fff;
+			font-family: helvetica, arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			font-size: 12pt;
+		}
+		div.brush {
+			margin:0px;
+			padding:0px;
+			border:1px solid black;
+			position:absolute;
+			left:0px;
+			top:0px;
+			width:64px;
+			height:64px;
+			background-image: url(media/0.png);
+			background-color: black;
+		}
+		div.block {
+			margin:0px;
+			padding:0px;
+			border:1px solid black;
+			position:absolute;
+			left:0px;
+			top:0px;
+			width:64px;
+			height:64px;
+			background: url(media/0.png);
+		}
+		div span {
+			margin-right:20px;
+			font-size:11px;
+		}
+		input.count {
+			width:25px;
+		}
+		div#height-play {
+			font-size:30px;
+		}
+		div#height-play div {
+			margin-bottom:10px;
+		}
+		div#height-play div input {
+			font-size:30px; height: 35px; width:40px;
+		}
+		div#height-play button {
+			font-size:30px;
+		}
+	</style>
+	<script type="text/javascript" src="../jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="level-editor.js"></script>
+</head>
+<body>
+<div id="json-wrap" style="margin:20px 20px 0px 20px;">Level Code: <input type="text" size="100"><button>Load from Code</button></div>
+<div id="droppables" style="margin:20px 20px 0px 20px;">Droppables:&nbsp;&nbsp;&nbsp;</div>
+<div id="loot" style="margin:20px 20px 0px 20px;">Loot Needed:&nbsp;&nbsp;&nbsp;</div>
+<div id="palette" style="float:left;height:600px;width:396px;margin:20px;position:relative;">
+	<div id='height-play' style="margin-top:218px;">
+		<div>Level height: <input id="level-height" type='text' value="10"></div>
+		<div><button id="play-level">Play Level</button></div>
+	</div>
+</div>
+<div id="level" style="height:198px;width:396px;margin:20px 20px 20px 436px;position:relative;background-color:black;"></div>
+
+</body>
+</html>
