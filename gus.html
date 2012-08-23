@@ -17,19 +17,48 @@
 			position: absolute;
 			left: 0;
 			right: 0;
-			top: 0;
+			top: 50px;
 			bottom: 0;
-			margin: auto;
+			margin-left: auto;
+			margin-right: auto;
 			border: 1px solid #555;
 		}
+		
+		#tutorial {
+			position: absolute;
+			left: 20px;
+			top: 50px;
+			width:200px;
+			background-color: #000000;
+			border: 1px solid #555;
+			padding: 10px;
+		}
+		
+		#header {margin-left: auto;margin-right: auto;width:578px;padding-top:15px;position:relative;}
+			#header button {position: absolute; left: 0;display:none;}
+			#header select {width:150px; position: absolute; left:214px;}
+			#header input {position: absolute; right: 0;display:none;}
+		
 	</style>
 
 	<script type="text/javascript" src="lib/impact/impact.js"></script>
 	<script type="text/javascript" src="lib/game/main.js"></script>
 	<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="alpha.js"></script>
+	<script type="text/javascript" src="levels.js"></script>
 </head>
 <body>
 	<canvas id="canvas"></canvas>
+	<div id="header">
+		<button class="editor-only">Edit in Level Editor</button>
+		<select>
+			<option value="">
+				Select a level...
+			</option>
+		</select>
+		<input class="editor-only" type="text" value="">
+	</div>
+	<div id="tutorial"></div>
 		<!-- CONTROLS:<BR>
 		&larr; and &rarr;: move the miner<BR>
 		&uarr; and &darr;: scroll up and down<BR>

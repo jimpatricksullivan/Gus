@@ -42,16 +42,13 @@
 		input.count {
 			width:25px;
 		}
-		div#height-play {
-			font-size:30px;
-		}
 		div#height-play div {
 			margin-bottom:10px;
 		}
 		div#height-play div input {
-			font-size:30px; height: 35px; width:40px;
+			width:20px;
 		}
-		div#height-play button {
+		div#height-play button#play-level {
 			font-size:30px;
 		}
 	</style>
@@ -64,7 +61,7 @@
 <div id="loot" style="margin:20px 20px 0px 20px;">Loot Needed:&nbsp;&nbsp;&nbsp;</div>
 <div id="palette" style="float:left;height:600px;width:396px;margin:20px;position:relative;">
 	<div id='height-play' style="margin-top:218px;">
-		<div>Level height: <input id="level-height" type='text' value="10"></div>
+		<div id="level-height">Level height: <input type='text' value="10"> <button>Change</button></div>
 		<div><button id="play-level">Play Level</button></div>
 	</div>
 </div>

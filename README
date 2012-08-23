@@ -1,0 +1,3 @@
+Gus is an independent video game under development by Jim Sullivan.  It is a puzzle game in which the player controls a miner (named, in case you haven’t already guessed, Gus) who must cleverly use different types of explosives to dig to the bottom of each level, collecting gold, silver and other loot along the way.    
+
+Gus uses the Impact JavaScript Game Engine (http://impactjs.com).  Since the Impact engine is a commercial product, the source code for the engine can not be distributed.  As such, this repository only contains source code specifically created for this game.  In order to run the game from these files, you need a copy of Impact.

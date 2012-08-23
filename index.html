@@ -13,28 +13,36 @@
 			font-size: 12pt;
 		}
 		
-		#canvas {
+		div#nav {
 			position: absolute;
 			left: 0;
 			right: 0;
 			top: 0;
 			bottom: 0;
 			margin: auto;
-			border: 1px solid #555;
+			text-align:center;
+			width:150px;
+			height:30px;
 		}
 	</style>
-
-	<script type="text/javascript" src="lib/impact/impact.js"></script>
-	<script type="text/javascript" src="lib/game/main.js"></script>
 	<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="alpha.js"></script>
+	<script type="text/javascript" src="levels.js"></script>
 </head>
 <body>
-	<canvas id="canvas"></canvas>
-		<!-- CONTROLS:<BR>
-		&larr; and &rarr;: move the miner<BR>
-		&uarr; and &darr;: scroll up and down<BR>
-		Z: drop TNT in the square you are facing<BR>
-		Y: detonate TNT<BR>
-		SPACE: restart level<BR> -->
+<div id="nav">
+	<div>
+		<select style="width:150px;">
+			<option value="">
+				Select a level...
+			</option>
+		</select>
+	</div>
+	<div class="editor-only" style="display:none;">
+		<div>OR</div>
+		<div><button>Level Editor</button></div>
+	</div>
+</div>
 </body>
 </html>
+
