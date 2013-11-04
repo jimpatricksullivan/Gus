@@ -17,11 +17,10 @@
 			position: absolute;
 			left: 0;
 			right: 0;
-			top: 50px;
+			top: 0;
 			bottom: 0;
-			margin-left: auto;
-			margin-right: auto;
-			border: 1px solid #555;
+            margin: auto;
+            border: 1px solid #555;
 		}
 		
 		#tutorial {
@@ -43,27 +42,12 @@
 
 	<script type="text/javascript" src="lib/impact/impact.js"></script>
 	<script type="text/javascript" src="lib/game/main.js"></script>
-	<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="lib/js-utilities/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="lib/js-utilities/underscore-min.js"></script>
 	<script type="text/javascript" src="alpha.js"></script>
 	<script type="text/javascript" src="levels.js"></script>
 </head>
 <body>
 	<canvas id="canvas"></canvas>
-	<div id="header">
-		<button class="editor-only">Edit in Level Editor</button>
-		<select>
-			<option value="">
-				Select a level...
-			</option>
-		</select>
-		<input class="editor-only" type="text" value="">
-	</div>
-	<div id="tutorial"></div>
-		<!-- CONTROLS:<BR>
-		&larr; and &rarr;: move the miner<BR>
-		&uarr; and &darr;: scroll up and down<BR>
-		Z: drop TNT in the square you are facing<BR>
-		Y: detonate TNT<BR>
-		SPACE: restart level<BR> -->
 </body>
 </html>

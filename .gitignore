@@ -4,4 +4,7 @@ lib/impact/
 lib/weltmeister/
 tools/
 .project
-
+*.py
+*.iml
+._*
+*.xml
